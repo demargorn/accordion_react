@@ -4,7 +4,7 @@ const Section = ({ title, description }) => {
    const [open, setOpen] = useState(false);
 
    return (
-      <section className={open ? 'section open' : 'section'}>
+      <section className={'section' + (open ? ' open' : '')}>
          <button>toggle</button>
          <h3 className='sectionhead' onClick={() => setOpen(!open)}>
             {title}
